@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-scroll";
-import  headerLinkState  from './headerLinkState'
 import  Icon  from '../Icon';
+import headerLinkState from './headerLinkItems';
 
 
 const Header = () => {
