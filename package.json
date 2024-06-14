@@ -10,9 +10,7 @@
     "export": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d out --nojekyll --cname holnyx.github.io",
-    "static": "next build && next export && touch ./out/.nojekyll && echo 'holnyx.github.io' > ./out/CNAME"
+    "predeploy": "yarn build"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
