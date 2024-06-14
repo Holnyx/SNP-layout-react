@@ -1,9 +1,9 @@
-type HeaderLinkStateType = {
+type HeaderLinkStateItem = {
     title: string
     href: string
 }
 
-export const HeaderLinkState: HeaderLinkStateType[] = [
+export const headerLinkState: HeaderLinkStateItem[] = [
     { title: "Туры", href: "link-tour" },
     { title: "Создать тур", href: "link-create-tour" },
     { title: "Отзывы", href: "link-review" },

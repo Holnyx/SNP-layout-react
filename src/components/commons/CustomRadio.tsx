@@ -1,13 +1,13 @@
 import React, { FC } from 'react';
 
-type CustomRadioPropsType ={
+type CustomRadioPropsItem ={
     id: string
     htmlFor: string
     title: string
     name: string
 }
 
-export const CustomRadio: FC<CustomRadioPropsType> = ({id, htmlFor, title, name}) => {
+const CustomRadio: FC<CustomRadioPropsItem> = ({id, htmlFor, title, name}) => {
     return (
         <div className="form__check-yes-no-flex">
             <input className="real-radio" type="radio" id={id} name={name} ></input>
@@ -16,4 +16,4 @@ export const CustomRadio: FC<CustomRadioPropsType> = ({id, htmlFor, title, name}
         </div>
     );
 };
-
+export default CustomRadio

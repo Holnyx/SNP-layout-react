@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-type InputFieldPropsType = {
+type InputFieldPropsItem = {
     htmlFor: string
     name: string
     placeholder?: string
@@ -14,7 +14,7 @@ type InputFieldPropsType = {
     max?: string | number 
 }
 
-export const InputField: FC<InputFieldPropsType> = ({ htmlFor, name, placeholder, required, className, type, id, title, maxLength, pattern, max }) => {
+const InputField: FC<InputFieldPropsItem> = ({ htmlFor, name, placeholder, required, className, type, id, title, maxLength, pattern, max }) => {
     return (
         <div className="input-box">
             <label htmlFor={htmlFor}>{title}</label>
@@ -23,4 +23,4 @@ export const InputField: FC<InputFieldPropsType> = ({ htmlFor, name, placeholder
         </div>
     );
 };
-
+export default InputField

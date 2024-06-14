@@ -1,17 +1,14 @@
-"use client"
-
-import { Icon } from "../Icon"
-import './buttonComponent.sass'
+import Icon from "../Icon"
 import { FC, useEffect, useState } from "react";
 
-type ButtonType = {
+type ButtonItem = {
     href?: string
     title: string
     className?: string
 }
 
 
-export const ButtonInfo: FC<ButtonType> = ({href, title, className}) => {
+const ButtonInfo: FC<ButtonItem> = ({ href, title, className }) => {
     const [show, setShow] = useState(false)
     useEffect(() => {
         setShow(window.innerWidth > 1023)
@@ -29,3 +26,4 @@ export const ButtonInfo: FC<ButtonType> = ({href, title, className}) => {
         </a>
     )
 }
+export default ButtonInfo

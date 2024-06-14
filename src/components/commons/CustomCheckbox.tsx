@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
-import { Icon } from './Icon';
+import  Icon  from './Icon';
 
-type CustomCheckBoxPropsType = {
+type CustomCheckBoxPropsItem = {
     label?: string
     link?: string
 }
 
-export const CustomCheckBox: FC<CustomCheckBoxPropsType> = ({label, link}) => {
+const CustomCheckBox: FC<CustomCheckBoxPropsItem> = ({label, link}) => {
     return (
         <>
             <input className="checkbox" type="checkbox" id="confirm" required></input>
@@ -18,4 +18,4 @@ export const CustomCheckBox: FC<CustomCheckBoxPropsType> = ({label, link}) => {
         </>
     );
 };
-
+export default CustomCheckBox

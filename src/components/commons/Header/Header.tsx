@@ -1,12 +1,10 @@
-
-import { Link } from "react-scroll";
 import React, { useEffect, useState } from 'react';
-import './HeaderStyles.sass'
-import { HeaderLinkState } from './HeaderLinkState'
-import { Icon } from '../Icon';
+import { Link } from "react-scroll";
+import { headerLinkState } from './headerLinkState'
+import  Icon  from '../Icon';
 
 
-export const Header = () => {
+const Header = () => {
     const [showLink, setShowLink] = useState(false)
     const [scroll, setScroll] = useState(0)
     useEffect(() => {
@@ -37,7 +35,7 @@ export const Header = () => {
                 {showLink ?
                     <nav>
                         <ul className='header__list'>
-                            {HeaderLinkState.map((link, i) =>
+                            {headerLinkState.map((link, i) =>
                                 <li key={i}>
                                     <Link className="list__item list__item--hover" offset={-100}
                                         activeClass="active" spy={true} smooth={true} to={link.href}>{link.title}</Link>
@@ -53,4 +51,4 @@ export const Header = () => {
         </header>
     );
 };
-
+export default Header

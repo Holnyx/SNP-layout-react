@@ -1,19 +1,8 @@
 import React, { ChangeEvent, FC, useState } from 'react';
-import { Icon } from './Icon'
+import  Icon  from './Icon'
+import { directionOptions } from '@/pages/HomePage/CreateTour/CreateTour';
 
-export type directionOptionsType = {
-    value: string
-    title: string
-    disabled?: boolean
-}
-
-const directionOptions: directionOptionsType[] = [
-    { value: "color", title: "Куда хотите ехать", disabled: true },
-    { value: "select", title: "Пункт выбран" },
-    { value: "select2", title: "Пункт выбран другой" }
-];
-
-type SelectFieldPropsType = {
+type SelectFieldPropsItem = {
     title: string
     htmlFor: string
     defaultValue: string
@@ -23,7 +12,7 @@ type SelectFieldPropsType = {
     id: string
 }
 
-export const SelectField: FC<SelectFieldPropsType> = ({ title, htmlFor, defaultValue, required, className, name, id}) => {
+const SelectField: FC<SelectFieldPropsItem> = ({ title, htmlFor, defaultValue, required, className, name, id}) => {
     const [select, setSelect] = useState(true)
 
     const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -43,3 +32,4 @@ export const SelectField: FC<SelectFieldPropsType> = ({ title, htmlFor, defaultV
         </div>
     );
 };
+export default SelectField

@@ -1,9 +1,8 @@
 import React from 'react';
-import './Footer.sass'
+import  Icon  from '../Icon';
 import { FooterLinkState } from './footerLinkState';
-import { Icon } from '../Icon';
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer className="footer-color">
             <div className="wrapper footer">
@@ -21,3 +20,4 @@ export const Footer = () => {
     );
 };
 
+export default Footer

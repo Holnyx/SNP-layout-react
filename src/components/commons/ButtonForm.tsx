@@ -1,19 +1,20 @@
 import React, { FC } from 'react';
 
-type ButtonType = "submit" | "reset" | "button" | undefined
+type ButtonItem = "submit" | "reset" | "button" | undefined
 
-type ButtonFormPropsType = {
+type ButtonFormPropsItem = {
     className: string
-    type: ButtonType
+    type: ButtonItem
     title: string
     id?: string
     onClick?: () => void
 }
 
 
-export const ButtonForm: FC<ButtonFormPropsType> = ({ className, title, type, id, onClick, ...restProps }) => {
+const ButtonForm: FC<ButtonFormPropsItem> = ({ className, title, type, id, onClick}) => {
     return (
-        <button className={className} type={type} id={id} onClick={onClick} {...restProps}>{title}</button>
+        <button className={className} type={type} id={id} onClick={onClick}>{title}</button>
     );
 };
 
+export default ButtonForm
