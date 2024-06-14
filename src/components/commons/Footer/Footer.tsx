@@ -1,6 +1,6 @@
 import React from 'react';
 import  Icon  from '../Icon';
-import { FooterLinkState } from './footerLinkState';
+import  FooterLinkState  from './footerLinkState';
 
 const Footer = () => {
     return (
