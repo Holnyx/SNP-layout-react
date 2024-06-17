@@ -1,5 +1,6 @@
+import ButtonInfo from '@/components/commons/ButtonComponent/ButtonComponent'
 import Head from 'next/head'
-import ButtonInfo from '../components/commons/ButtonComponent/ButtonComponent'
+
 
 
 export default function NotFound() {
