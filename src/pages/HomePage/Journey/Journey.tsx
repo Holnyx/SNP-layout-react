@@ -1,7 +1,7 @@
 import React from 'react';
-import ButtonInfo from 'src/components/commons/ButtonComponent/ButtonComponent';
 import menuButtonState from '../../../components/state/journeyLinkState';
 import journeyItems from '../../../components/state/journeyItemsState';
+import ButtonInfo from '../../../components/commons/ButtonComponent/ButtonComponent';
 
 const Journey = () => {
     return (

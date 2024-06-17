@@ -1,11 +1,10 @@
 
 import React from 'react';
-import ButtonForm from 'src/components/commons/ButtonForm';
-import CustomCheckBox from 'src/components/commons/CustomCheckbox';
-import CustomRadio from 'src/components/commons/CustomRadio';
-import InputField from 'src/components/commons/InputField';
-import SelectField from 'src/components/commons/SelectField';
-
+import InputField from '../../../components/commons/InputField';
+import SelectField from '../../../components/commons/SelectField';
+import CustomRadio from '../../../components/commons/CustomRadio';
+import CustomCheckBox from '../../../components/commons/CustomCheckbox';
+import ButtonForm from '../../../components/commons/ButtonForm';
 
 export type DirectionOptionsItem = {
     value: string

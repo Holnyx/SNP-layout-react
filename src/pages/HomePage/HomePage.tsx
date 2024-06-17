@@ -7,8 +7,8 @@ import CreateTour from './CreateTour/CreateTour';
 import ReviewTour from './ReviewTour/ReviewTour';
 import PhotoTour from './PhotoTour/PhotoTour';
 import TravelHistory from './TravelHistory/TravelHistory';
-import Header from 'src/components/commons/Header/Header';
-import Footer from 'src/components/commons/Footer/Footer';
+import Header from '../../components/commons/Header/Header';
+import Footer from '../../components/commons/Footer/Footer';
 
 
 function HomePage({ }) {
