@@ -1,5 +1,5 @@
 import React from 'react';
-import  ButtonInfo  from '@/components/commons/ButtonComponent/ButtonComponent';
+import ButtonInfo from 'src/components/commons/ButtonComponent/ButtonComponent';
 import menuButtonState from '../../../components/state/journeyLinkState';
 import journeyItems from '../../../components/state/journeyItemsState';
 
@@ -17,16 +17,17 @@ const Journey = () => {
                 </ul>
             </div>
             <div className="travel-boxes wrapper" id='journey'>
-                {journeyItems.map((el, i) =>{
-                return (
-                    <div key={i} className='travel-card travel-card--hover' id={el.id} style={{ backgroundImage: `url(${el.background})` }}>
-                        <div className='travel-card__content'>
-                            <h3 className='travel-card__title'>{el.title}</h3>
-                            <span className='travel-card__subtitle'>{el.value}</span>
+                {journeyItems.map((el, i) => {
+                    return (
+                        <div key={i} className='travel-card travel-card--hover' id={el.id} style={{ backgroundImage: `url(${el.background})` }}>
+                            <div className='travel-card__content'>
+                                <h3 className='travel-card__title'>{el.title}</h3>
+                                <span className='travel-card__subtitle'>{el.value}</span>
+                            </div>
+                            <ButtonInfo title={'Подробнее'} />
                         </div>
-                        <ButtonInfo title={'Подробнее'} />
-                    </div>
-                )})}
+                    )
+                })}
             </div>
         </section >
     );

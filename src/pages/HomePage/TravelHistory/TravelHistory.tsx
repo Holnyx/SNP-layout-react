@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import  ButtonInfo  from '@/components/commons/ButtonComponent/ButtonComponent';
+import ButtonInfo from 'src/components/commons/ButtonComponent/ButtonComponent';
 import  LetsGoSection  from '../LetsGoSection/LetsGoSection';
 import travelHistoryState from '../../../components/state/travelHistoryState';
 

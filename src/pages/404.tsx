@@ -1,4 +1,4 @@
-import ButtonInfo from '@/components/commons/ButtonComponent/ButtonComponent'
+import ButtonInfo from 'src/components/commons/ButtonComponent/ButtonComponent'
 import Head from 'next/head'
 
 
