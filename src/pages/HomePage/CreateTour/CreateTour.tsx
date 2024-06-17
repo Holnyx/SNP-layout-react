@@ -12,8 +12,8 @@ export type DirectionOptionsItem = {
     disabled?: boolean
 }
 
-export const directionOptions: DirectionOptionsItem[] = [
-    { value: "color", title: "Куда хотите ехать", disabled: true },
+const directionOptions: DirectionOptionsItem[] = [
+    { value: "some", title: "Куда хотите ехать", disabled: true },
     { value: "select", title: "Пункт выбран" },
     { value: "select2", title: "Пункт выбран" }
 ];
@@ -33,7 +33,7 @@ const CreateTour = () => {
                     <fieldset className="form__item-box">
                         <InputField title={'Имя'} htmlFor={'userName'} placeholder={'Введите Ваше имя'}
                             required={true} className={'input-style'} type={'text'} id={'userName'} name={'name'} />
-                        <SelectField title={'Направление'} htmlFor={'direction'} defaultValue={'color'} required={true}
+                        <SelectField directionOptions={directionOptions} title={'Направление'} htmlFor={'direction'} defaultValue={'some'} required={true}
                             className={'input-style'} id={'direction'} name={'direction'} />
                     </fieldset>
                     <fieldset className="form__item-box">

@@ -1,6 +1,7 @@
 import React, { ChangeEvent, FC, useState } from 'react';
-import  Icon  from './Icon'
-import { directionOptions } from '@/pages/HomePage/CreateTour/CreateTour';
+import Icon from './Icon'
+import { DirectionOptionsItem } from '../../pages/HomePage/CreateTour/CreateTour';
+
 
 type SelectFieldPropsItem = {
     title: string
@@ -10,19 +11,22 @@ type SelectFieldPropsItem = {
     className: string
     name: string
     id: string
+    directionOptions: DirectionOptionsItem[]
 }
 
-const SelectField: FC<SelectFieldPropsItem> = ({ title, htmlFor, defaultValue, required, className, name, id}) => {
-    const [select, setSelect] = useState(true)
+const SelectField: FC<SelectFieldPropsItem> = ({ title, htmlFor, defaultValue, required, className, name, id, directionOptions }) => {
+    const [select, setSelect] = useState(defaultValue)
 
     const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
-        setSelect(event.currentTarget.value === "color");
+        setSelect(event.currentTarget.value);
     };
+
+    const isPlaceholder = directionOptions.some(el => el.value === select && el.disabled)
 
     return (
         <div className="input-box">
             <label htmlFor={htmlFor}>{title}</label>
-            <select defaultValue={defaultValue}  required={required} className={`${className} ${select ? 'select-placeholder' : ''}`}
+            <select defaultValue={defaultValue} required={required} className={`${className} ${isPlaceholder ? 'select-placeholder' : ''}`}
                 name={name} id={id} onChange={handleChange} >
                 {directionOptions.map((option, i) =>
                     <option key={i} value={option.value} disabled={option.disabled} >{option.title}</option>
