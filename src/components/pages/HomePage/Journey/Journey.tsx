@@ -1,7 +1,8 @@
 import React from 'react';
-import menuButtonState from '../../../components/state/journeyLinkState';
-import journeyItems from '../../../components/state/journeyItemsState';
-import ButtonInfo from '../../../components/commons/ButtonComponent/ButtonComponent';
+import menuButtonState from '../../../state/journeyLinkState';
+import journeyItems from '../../../state/journeyItemsState';
+import ButtonInfo from '../../../commons/ButtonComponent/ButtonComponent';
+
 
 const Journey = () => {
     return (

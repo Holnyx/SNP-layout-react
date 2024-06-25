@@ -6,11 +6,11 @@
     line-height: $lh
     letter-spacing: $ls
 
-@mixin grid-column-media($num_1024, $num_768)
+@mixin grid-column-media($num_1024, $num_900)
     @media (max-width: 1024px)
         grid-column: span $num_1024
-    @media (max-width: 768px)
-        grid-column: span $num_768
+    @media (max-width: 900px)
+        grid-column: span $num_900
 
 
 @mixin grid_row_column($row,$column)

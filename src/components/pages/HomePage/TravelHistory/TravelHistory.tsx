@@ -1,8 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import  LetsGoSection  from '../LetsGoSection/LetsGoSection';
-import travelHistoryState from '../../../components/state/travelHistoryState';
-import ButtonInfo from '../../../components/commons/ButtonComponent/ButtonComponent';
+import LetsGoSection from '../LetsGoSection/LetsGoSection';
+import travelHistoryState from '../../../state/travelHistoryState';
+import ButtonInfo from '../../../commons/ButtonComponent/ButtonComponent';
+
 
 
 const TravelHistory = () => {
@@ -33,7 +34,7 @@ const TravelHistory = () => {
                                     <a key={i} className='a a--hover a--active' href="">{el}</a>)}
                             </div>
                         </div>
-                        <Image className='background-img' src={el.background} alt={'background-img'} unoptimized priority={true}></Image>
+                        <Image className='background-img' src={el.background} alt={'background-img'} unoptimized priority={true} width={1170} height={567}></Image>
                     </div>
                 )}
             </div>

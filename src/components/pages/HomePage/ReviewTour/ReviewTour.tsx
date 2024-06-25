@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import tourReview from '../../../components/state/reviewTourState';
+import tourReview from '../../../state/reviewTourState';
+
 
 
 const ReviewTour = () => {
@@ -22,7 +23,7 @@ const ReviewTour = () => {
                                 <span>{tour.name}</span>
                                 <span>{tour.title}</span>
                             </div>
-                            <Image src={tour.avatar} alt="photo-person" width={100} height={100} unoptimized priority={true}></Image>
+                            <Image src={tour.avatar} alt="photo-person" width={75} height={75} unoptimized priority={true}></Image>
                         </div>
                     </div >
                 )}

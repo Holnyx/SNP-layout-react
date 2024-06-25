@@ -1,6 +1,7 @@
 import React, { ChangeEvent, FC, useState } from 'react';
 import Icon from './Icon'
-import { DirectionOptionsItem } from '../../pages/HomePage/CreateTour/CreateTour';
+import { DirectionOptionsItem } from '../pages/HomePage/CreateTour/CreateTour';
+
 
 
 type SelectFieldPropsItem = {

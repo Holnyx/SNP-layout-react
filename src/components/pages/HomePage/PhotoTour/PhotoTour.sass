@@ -30,7 +30,6 @@
                 row-gap: 18px
 
             img
-                
                 height: 300px
                 &:nth-child(-n+4)
                     @include grid_row_column(1,5)
@@ -43,7 +42,12 @@
                     @include grid-column-media(4,3)
                 @include mobile
                     height: 110px
-
+            @include laptop
+                .image-off
+                    display: none
+            @include mobile
+                .image-off-viewport
+                     display: none
         img
             width: 100%
             height: 300px

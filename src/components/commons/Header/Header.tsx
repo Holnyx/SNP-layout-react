@@ -5,16 +5,7 @@ import headerLinkState from './headerLinkItems';
 
 
 const Header = () => {
-    const [showLink, setShowLink] = useState(false)
     const [scroll, setScroll] = useState(0)
-    useEffect(() => {
-        setShowLink(window.innerWidth >= 1024)
-        const handleResize = () => {
-            setShowLink(window.innerWidth >= 1024);
-        };
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
     useEffect(() => {
         setScroll(window.scrollY)
         const handleScroll = () => {
@@ -32,7 +23,6 @@ const Header = () => {
                         width='182' height='30' viewBox='0 0 182 30'
                     />
                 </Link>
-                {showLink ?
                     <nav>
                         <ul className='header__list'>
                             {headerLinkState.map((link, i) =>
@@ -43,7 +33,6 @@ const Header = () => {
                             )}
                         </ul>
                     </nav>
-                    : ''}
                 <span>
                     <a className='list__item' href="tel:7 999 999 99 99"> +7 999 999 99 99</a>
                 </span>
