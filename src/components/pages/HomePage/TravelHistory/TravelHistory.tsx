@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import LetsGoSection from '../LetsGoSection/LetsGoSection';
-import travelHistoryState from '../../../state/travelHistoryState';
+import travelHistoryState from '../../../state/travelHistoryItems';
 import ButtonInfo from '../../../commons/ButtonComponent/ButtonComponent';
 
 

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import travelPhotoState, { TravelPhotoItem } from '../../../state/photoTourState';
-
-
+import travelPhotoState, { TravelPhotoItem } from '../../../state/photoTourItems';
 
 
 const PhotoTour = () => {

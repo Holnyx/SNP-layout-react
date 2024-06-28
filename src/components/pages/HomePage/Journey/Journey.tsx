@@ -1,6 +1,6 @@
 import React from 'react';
-import menuButtonState from '../../../state/journeyLinkState';
-import journeyItems from '../../../state/journeyItemsState';
+import menuButtonState from '../../../state/journeyLinkItems';
+import journeyItems from '../../../state/journeyItemsItems';
 import ButtonInfo from '../../../commons/ButtonComponent/ButtonComponent';
 
 
