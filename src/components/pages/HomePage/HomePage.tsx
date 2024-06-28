@@ -9,21 +9,24 @@ import PhotoTour from './PhotoTour/PhotoTour';
 import TravelHistory from './TravelHistory/TravelHistory';
 import Header from '../../commons/Header/Header';
 import Footer from '../../commons/Footer/Footer';
+import { ScrollProvider } from '../../context/ScrollContext';
 
 
 
 function HomePage({ }) {
   return (
-    <div className="App gap">
-      <Header />
-      <Main />
-      <Journey />
-      <CreateTour />
-      <ReviewTour />
-      <PhotoTour />
-      <TravelHistory />
-      <Footer />
-    </div>
+    <ScrollProvider>
+      <div className="App gap">
+        <Header />
+        <Main />
+        <Journey />
+        <CreateTour />
+        <ReviewTour />
+        <PhotoTour />
+        <TravelHistory />
+        <Footer />
+      </div>
+    </ScrollProvider>
   );
 }
 

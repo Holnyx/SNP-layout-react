@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import travelPhotoState, { TravelPhotoItem } from '../../../state/photoTourItems';
+import travelPhotoItems from '../../../state/photoTourItems';
 
 
 const PhotoTour = () => {
@@ -13,7 +13,7 @@ const PhotoTour = () => {
             </div>
             <div className="images-travel">
                 <figure className="images-travel__box">
-                    {travelPhotoState.map((photo, i) =>
+                    {travelPhotoItems.map((photo, i) =>
                         <Image key={i} className={photo.class} src={photo.src} alt={photo.alt} unoptimized priority={true} width={400} height={300}></Image>
                     )}
                 </figure>

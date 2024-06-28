@@ -7,7 +7,7 @@ export type TravelPhotoItem = {
   classViewport?: string;
 };
 
-const travelPhotoState: TravelPhotoItem[] = [
+const travelPhotoItems: TravelPhotoItem[] = [
   { src: '/img/travel-photo-1.png', alt: "Путешествие в горы" },
   { src: '/img/travel-photo-2.png', alt: "Путешествие в горы", class: "image-off" },
   { src: '/img/travel-photo-3.png', alt: "Путешествие в горы", class: "image-off-viewport" },
@@ -27,4 +27,4 @@ const travelPhotoState: TravelPhotoItem[] = [
   { src: '/img/travel-photo-13.png', alt: "Путешествие в горы", class: "image-off" },
 ];
 
-export default travelPhotoState
+export default travelPhotoItems

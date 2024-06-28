@@ -12,7 +12,7 @@ type TravelHistoryItem = {
     social: string[]
 }
 
-const travelHistoryState: TravelHistoryItem[] = [
+const travelHistoryItems: TravelHistoryItem[] = [
   {
     title: "Автостопом в Стамбул",
     info: {
@@ -39,4 +39,4 @@ const travelHistoryState: TravelHistoryItem[] = [
     social: ["instagram", "facebook", "ВКонтакте"],
   },
 ];
-export default travelHistoryState
+export default travelHistoryItems

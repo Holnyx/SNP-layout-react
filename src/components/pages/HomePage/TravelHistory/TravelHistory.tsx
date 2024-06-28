@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import LetsGoSection from '../LetsGoSection/LetsGoSection';
-import travelHistoryState from '../../../state/travelHistoryItems';
+import travelHistoryItems from '../../../state/travelHistoryItems';
 import ButtonInfo from '../../../commons/ButtonComponent/ButtonComponent';
 
 
@@ -15,7 +15,7 @@ const TravelHistory = () => {
                     обучения кадров</span>
             </div>
             <div className="travel-history-box wrapper" id="travel-history">
-                {travelHistoryState.map((el, i) =>
+                {travelHistoryItems.map((el, i) =>
                     <div key={i} className='travel-history' id='travel-history'>
                         <div className='card-info'>
                             <h3 className='card-info__title'>{el.title}</h3>

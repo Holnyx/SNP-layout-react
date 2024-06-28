@@ -2,21 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Link } from "react-scroll";
 import  Icon  from '../Icon';
 import headerLinkState from './headerLinkItems';
+import { useScroll } from '../../context/ScrollContext';
 
 
 const Header = () => {
-    const [scroll, setScroll] = useState(0)
-    useEffect(() => {
-        setScroll(window.scrollY)
-        const handleScroll = () => {
-            setScroll(window.scrollY);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
+    const scrollY = useScroll();
+    const isSticky = scrollY > 450;
     return (
-        <header className={`header ${scroll > 450 ? 'show' : ''}`} id="header" style={{ position: `${scroll > 450 ? 'fixed' : 'absolute'}` }}>
+        <header className={`header ${isSticky ? 'show' : ''}`} id="header" style={{ position: `${isSticky ? 'fixed' : 'absolute'}` }}>
             <div className="header wrapper">
                 <Link to="link-start" activeClass="active" spy={true} smooth={true} style={{ cursor: 'pointer' }}>
                     <Icon className={'header__logo'} iconId={'YourTour'}
